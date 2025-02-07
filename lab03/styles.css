@@ -1,0 +1,48 @@
+/* Removing default margins and padding */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Adding vertical margins to all rows in table 2 */
+.table2 tr {
+    margin: 20px 0px;
+}
+
+/* Changing backgrounfcolor of content boxes */
+.box1{
+    text-align: center;
+    background-color: darkred;
+}
+
+.box2{
+    text-align: center;
+    background-color: deeppink;
+}
+
+.box3{
+    text-align: center;
+    background-color: brown;
+}
+
+/* Changing the box text color */
+.box_text_color{    
+    color: white;
+    padding: 10px;
+    margin: 0px;
+}
+
+/* setting image widths in table 2 */
+.td_image_width{
+    width: 570px;
+    height: 400px;
+    display: block;
+} 
+
+/* Formatting all paragraphs */
+p {
+    font: Arial;
+    font-size: 16px;
+    color: #3d3d3d;
+}
