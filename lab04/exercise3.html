@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab4 - Exercise 3</title>
+    </head>
+    <body>
+        <h1>JavaScript Lab</h1>
+        <script>
+            // Creating classRoster Array
+            let classRoster = ["Alice", "Tom", "Charlie", "Diana", "Evan"]
+
+            // Logging array onto console as a string; comparing to logging array as is
+            console.log(classRoster.toString())
+            console.log(classRoster)
+
+            // creating classInfo object
+            let classInfo = {
+                className: 'ENSF381: Full-Stack Web Development',
+                instructor: 'Dr. Smith',
+                students: classRoster,
+                details: {
+                    semester: 'Winter',
+                    year: 2025
+                }
+            }
+
+            // updates: added 'schedule' property; update 'instructor' propery
+            classInfo.schedule = ['Monday', 'Wednesday', 'Friday']
+            classInfo.instructor = 'Dr. Abdellatif'
+
+            // log: className, instructor, students
+            console.log(classInfo.className)
+            console.log(classInfo.instructor)
+            console.log(classInfo.students)
+
+            // log: semester from nested object
+            console.log(classInfo.details.semester)
+
+            // log: entire classInfo object
+            console.log(classInfo)
+
+            // Destructure and log new variables from object classInfo
+            let name = classInfo.className
+            console.log(name)
+            let students = classInfo.students
+            console.log(students)
+
+            // Destructure and log new variables from property classInfo.details
+            let sem = classInfo.details.semester
+            console.log(sem)
+            let year = classInfo.details.year
+            console.log(year)
+            
+            // Destructure and log new variables from array classRoster
+            let [student1, student2] = classRoster
+            let remainingStudents = classRoster.slice(2, 5)
+            console.log(student1)
+            console.log(student2)
+            console.log(remainingStudents)
+        </script>
+    </body>
+</html>

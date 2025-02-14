@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab4 – Exercise 2</title>
+    </head>
+    <body>
+        <h1>JavaScript Lab</h1>
+        <script>
+            /*  function add(number1, number2) 
+                {
+                return (number1 + number2);
+                
+                }
+                console.log(add(2,3));
+
+                function subtract(number1, number2) 
+                {
+                return (number1 - number2);
+                }
+                console.log(subtract(5,3));
+            */
+        
+
+            let add = (number1, number2= 0) => number1 + number2;
+            
+            
+            console.log(add(2,3));
+            console.log(add(2));
+
+            let  subtract = (number1, number2= 0) => number1 - number2;
+            
+            console.log(subtract(5,3));
+            console.log(subtract(5));
+
+            let  multiply = (number1, number2) => number1 * number2;
+            console.log(multiply(5,7));
+
+
+            let  divide = (number1, number2) => number2 !== 0 ? number1 / number2 : "Error: can't divide by zero";
+            console.log(divide(60,10));
+            console.log(divide(60,0));
+
+
+            function calculator(number1,number2,callback)
+            {
+            return callback(number1,number2);
+            }
+
+            console.log(calculator(5,3,add));
+            console.log(calculator(6,7,multiply))
+        </script>
+    </body>
+</html>
